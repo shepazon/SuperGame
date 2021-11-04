@@ -1,0 +1,1082 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28327970272878780057C265 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2832796F272878780057C265 /* AppDelegate.swift */; };
+		28327972272878780057C265 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28327971272878780057C265 /* GameViewController.swift */; };
+		28327975272878780057C265 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28327973272878780057C265 /* Main.storyboard */; };
+		28327978272878780057C265 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28327976272878780057C265 /* LaunchScreen.storyboard */; };
+		2832797C272878780057C265 /* Supergame.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2832797B272878780057C265 /* Supergame.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		28327982272878780057C265 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28327980272878780057C265 /* Interface.storyboard */; };
+		28327988272878790057C265 /* Supergame Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 28327987272878790057C265 /* Supergame Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2832798D272878790057C265 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2832798C272878790057C265 /* InterfaceController.swift */; };
+		2832798F272878790057C265 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2832798E272878790057C265 /* ExtensionDelegate.swift */; };
+		28327998272878790057C265 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28327997272878790057C265 /* AppDelegate.swift */; };
+		2832799A272878790057C265 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28327999272878790057C265 /* GameViewController.swift */; };
+		2832799D272878790057C265 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2832799B272878790057C265 /* Main.storyboard */; };
+		283279A0272878790057C265 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2832799E272878790057C265 /* LaunchScreen.storyboard */; };
+		283279A8272878790057C265 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283279A7272878790057C265 /* AppDelegate.swift */; };
+		283279AA272878790057C265 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283279A9272878790057C265 /* GameViewController.swift */; };
+		283279AD272878790057C265 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 283279AB272878790057C265 /* Main.storyboard */; };
+		283279AE272878790057C265 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 28327964272878740057C265 /* Actions.sks */; };
+		283279AF272878790057C265 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 28327964272878740057C265 /* Actions.sks */; };
+		283279B0272878790057C265 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 28327964272878740057C265 /* Actions.sks */; };
+		283279B1272878790057C265 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 28327965272878740057C265 /* GameScene.sks */; };
+		283279B2272878790057C265 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 28327965272878740057C265 /* GameScene.sks */; };
+		283279B3272878790057C265 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 28327965272878740057C265 /* GameScene.sks */; };
+		283279B4272878790057C265 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 28327965272878740057C265 /* GameScene.sks */; };
+		283279B5272878790057C265 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28327966272878740057C265 /* GameScene.swift */; };
+		283279B6272878790057C265 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28327966272878740057C265 /* GameScene.swift */; };
+		283279B7272878790057C265 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28327966272878740057C265 /* GameScene.swift */; };
+		283279B8272878790057C265 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28327966272878740057C265 /* GameScene.swift */; };
+		283279B9272878790057C265 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28327967272878780057C265 /* Assets.xcassets */; };
+		283279BA272878790057C265 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28327967272878780057C265 /* Assets.xcassets */; };
+		283279BB272878790057C265 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28327967272878780057C265 /* Assets.xcassets */; };
+		283279BC272878790057C265 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28327967272878780057C265 /* Assets.xcassets */; };
+		2860D57D2729AEAA00EA3BF1 /* AWSDynamoDB in Frameworks */ = {isa = PBXBuildFile; productRef = 2860D57C2729AEAA00EA3BF1 /* AWSDynamoDB */; };
+		2860D57F2729AEAA00EA3BF1 /* AWSGameLift in Frameworks */ = {isa = PBXBuildFile; productRef = 2860D57E2729AEAA00EA3BF1 /* AWSGameLift */; };
+		2860D5812729AEAA00EA3BF1 /* AWSS3 in Frameworks */ = {isa = PBXBuildFile; productRef = 2860D5802729AEAA00EA3BF1 /* AWSS3 */; };
+		2860D5842729B30300EA3BF1 /* AWSS3 in Frameworks */ = {isa = PBXBuildFile; productRef = 2860D5832729B30300EA3BF1 /* AWSS3 */; };
+		2860D5862729B31E00EA3BF1 /* AWSDynamoDB in Frameworks */ = {isa = PBXBuildFile; productRef = 2860D5852729B31E00EA3BF1 /* AWSDynamoDB */; };
+		2860D5882729B32600EA3BF1 /* AWSGameLift in Frameworks */ = {isa = PBXBuildFile; productRef = 2860D5872729B32600EA3BF1 /* AWSGameLift */; };
+		2865D2022732FE8B00B2F1FF /* AWSClientRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 2865D2012732FE8B00B2F1FF /* AWSClientRuntime */; };
+		28F7E0ED272C938700676D33 /* AWSClientRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 28F7E0EC272C938700676D33 /* AWSClientRuntime */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2832797D272878780057C265 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2832795F272878740057C265 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2832797A272878780057C265;
+			remoteInfo = "Supergame watchOS App";
+		};
+		28327989272878790057C265 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2832795F272878740057C265 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28327986272878790057C265;
+			remoteInfo = "Supergame watchOS App Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		283279C2272878790057C265 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				28327988272878790057C265 /* Supergame Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		283279C6272878790057C265 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				2832797C272878780057C265 /* Supergame.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		28327964272878740057C265 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		28327965272878740057C265 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		28327966272878740057C265 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		28327967272878780057C265 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2832796C272878780057C265 /* Supergame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Supergame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2832796F272878780057C265 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		28327971272878780057C265 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		28327974272878780057C265 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		28327977272878780057C265 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2832797B272878780057C265 /* Supergame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Supergame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28327981272878780057C265 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		28327987272878790057C265 /* Supergame Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Supergame Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2832798C272878790057C265 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		2832798E272878790057C265 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		28327990272878790057C265 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28327995272878790057C265 /* Supergame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Supergame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28327997272878790057C265 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		28327999272878790057C265 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		2832799C272878790057C265 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2832799F272878790057C265 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		283279A5272878790057C265 /* Supergame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Supergame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		283279A7272878790057C265 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		283279A9272878790057C265 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		283279AC272878790057C265 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28327969272878780057C265 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2860D5812729AEAA00EA3BF1 /* AWSS3 in Frameworks */,
+				2860D57D2729AEAA00EA3BF1 /* AWSDynamoDB in Frameworks */,
+				28F7E0ED272C938700676D33 /* AWSClientRuntime in Frameworks */,
+				2860D57F2729AEAA00EA3BF1 /* AWSGameLift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28327984272878790057C265 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28327992272878790057C265 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		283279A2272878790057C265 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2860D5862729B31E00EA3BF1 /* AWSDynamoDB in Frameworks */,
+				2860D5882729B32600EA3BF1 /* AWSGameLift in Frameworks */,
+				2865D2022732FE8B00B2F1FF /* AWSClientRuntime in Frameworks */,
+				2860D5842729B30300EA3BF1 /* AWSS3 in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2832795E272878740057C265 = {
+			isa = PBXGroup;
+			children = (
+				28327963272878740057C265 /* Supergame Shared */,
+				2832796E272878780057C265 /* Supergame iOS */,
+				2832797F272878780057C265 /* Supergame watchOS App */,
+				2832798B272878790057C265 /* Supergame watchOS App Extension */,
+				28327996272878790057C265 /* Supergame tvOS */,
+				283279A6272878790057C265 /* Supergame macOS */,
+				2832796D272878780057C265 /* Products */,
+				2860D5822729B30300EA3BF1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		28327963272878740057C265 /* Supergame Shared */ = {
+			isa = PBXGroup;
+			children = (
+				28327964272878740057C265 /* Actions.sks */,
+				28327965272878740057C265 /* GameScene.sks */,
+				28327966272878740057C265 /* GameScene.swift */,
+				28327967272878780057C265 /* Assets.xcassets */,
+			);
+			path = "Supergame Shared";
+			sourceTree = "<group>";
+		};
+		2832796D272878780057C265 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2832796C272878780057C265 /* Supergame.app */,
+				2832797B272878780057C265 /* Supergame.app */,
+				28327987272878790057C265 /* Supergame Extension.appex */,
+				28327995272878790057C265 /* Supergame.app */,
+				283279A5272878790057C265 /* Supergame.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2832796E272878780057C265 /* Supergame iOS */ = {
+			isa = PBXGroup;
+			children = (
+				2832796F272878780057C265 /* AppDelegate.swift */,
+				28327971272878780057C265 /* GameViewController.swift */,
+				28327973272878780057C265 /* Main.storyboard */,
+				28327976272878780057C265 /* LaunchScreen.storyboard */,
+			);
+			path = "Supergame iOS";
+			sourceTree = "<group>";
+		};
+		2832797F272878780057C265 /* Supergame watchOS App */ = {
+			isa = PBXGroup;
+			children = (
+				28327980272878780057C265 /* Interface.storyboard */,
+			);
+			path = "Supergame watchOS App";
+			sourceTree = "<group>";
+		};
+		2832798B272878790057C265 /* Supergame watchOS App Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2832798C272878790057C265 /* InterfaceController.swift */,
+				2832798E272878790057C265 /* ExtensionDelegate.swift */,
+				28327990272878790057C265 /* Info.plist */,
+			);
+			path = "Supergame watchOS App Extension";
+			sourceTree = "<group>";
+		};
+		28327996272878790057C265 /* Supergame tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				28327997272878790057C265 /* AppDelegate.swift */,
+				28327999272878790057C265 /* GameViewController.swift */,
+				2832799B272878790057C265 /* Main.storyboard */,
+				2832799E272878790057C265 /* LaunchScreen.storyboard */,
+			);
+			path = "Supergame tvOS";
+			sourceTree = "<group>";
+		};
+		283279A6272878790057C265 /* Supergame macOS */ = {
+			isa = PBXGroup;
+			children = (
+				283279A7272878790057C265 /* AppDelegate.swift */,
+				283279A9272878790057C265 /* GameViewController.swift */,
+				283279AB272878790057C265 /* Main.storyboard */,
+			);
+			path = "Supergame macOS";
+			sourceTree = "<group>";
+		};
+		2860D5822729B30300EA3BF1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2832796B272878780057C265 /* Supergame iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 283279C7272878790057C265 /* Build configuration list for PBXNativeTarget "Supergame iOS" */;
+			buildPhases = (
+				28327968272878780057C265 /* Sources */,
+				28327969272878780057C265 /* Frameworks */,
+				2832796A272878780057C265 /* Resources */,
+				283279C6272878790057C265 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2832797E272878780057C265 /* PBXTargetDependency */,
+			);
+			name = "Supergame iOS";
+			packageProductDependencies = (
+				2860D57C2729AEAA00EA3BF1 /* AWSDynamoDB */,
+				2860D57E2729AEAA00EA3BF1 /* AWSGameLift */,
+				2860D5802729AEAA00EA3BF1 /* AWSS3 */,
+				28F7E0EC272C938700676D33 /* AWSClientRuntime */,
+			);
+			productName = "Supergame iOS";
+			productReference = 2832796C272878780057C265 /* Supergame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2832797A272878780057C265 /* Supergame watchOS App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 283279C3272878790057C265 /* Build configuration list for PBXNativeTarget "Supergame watchOS App" */;
+			buildPhases = (
+				28327979272878780057C265 /* Resources */,
+				283279C2272878790057C265 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2832798A272878790057C265 /* PBXTargetDependency */,
+			);
+			name = "Supergame watchOS App";
+			productName = "Supergame watchOS App";
+			productReference = 2832797B272878780057C265 /* Supergame.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		28327986272878790057C265 /* Supergame watchOS App Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 283279BF272878790057C265 /* Build configuration list for PBXNativeTarget "Supergame watchOS App Extension" */;
+			buildPhases = (
+				28327983272878790057C265 /* Sources */,
+				28327984272878790057C265 /* Frameworks */,
+				28327985272878790057C265 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Supergame watchOS App Extension";
+			productName = "Supergame watchOS App Extension";
+			productReference = 28327987272878790057C265 /* Supergame Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		28327994272878790057C265 /* Supergame tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 283279CA272878790057C265 /* Build configuration list for PBXNativeTarget "Supergame tvOS" */;
+			buildPhases = (
+				28327991272878790057C265 /* Sources */,
+				28327992272878790057C265 /* Frameworks */,
+				28327993272878790057C265 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Supergame tvOS";
+			productName = "Supergame tvOS";
+			productReference = 28327995272878790057C265 /* Supergame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		283279A4272878790057C265 /* Supergame macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 283279CD272878790057C265 /* Build configuration list for PBXNativeTarget "Supergame macOS" */;
+			buildPhases = (
+				283279A1272878790057C265 /* Sources */,
+				283279A2272878790057C265 /* Frameworks */,
+				283279A3272878790057C265 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Supergame macOS";
+			packageProductDependencies = (
+				2860D5832729B30300EA3BF1 /* AWSS3 */,
+				2860D5852729B31E00EA3BF1 /* AWSDynamoDB */,
+				2860D5872729B32600EA3BF1 /* AWSGameLift */,
+				2865D2012732FE8B00B2F1FF /* AWSClientRuntime */,
+			);
+			productName = "Supergame macOS";
+			productReference = 283279A5272878790057C265 /* Supergame.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2832795F272878740057C265 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					2832796B272878780057C265 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					2832797A272878780057C265 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					28327986272878790057C265 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					28327994272878790057C265 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					283279A4272878790057C265 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 28327962272878740057C265 /* Build configuration list for PBXProject "Supergame" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2832795E272878740057C265;
+			packageReferences = (
+				2860D57B2729AEA900EA3BF1 /* XCRemoteSwiftPackageReference "aws-sdk-swift" */,
+			);
+			productRefGroup = 2832796D272878780057C265 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2832796B272878780057C265 /* Supergame iOS */,
+				2832797A272878780057C265 /* Supergame watchOS App */,
+				28327986272878790057C265 /* Supergame watchOS App Extension */,
+				28327994272878790057C265 /* Supergame tvOS */,
+				283279A4272878790057C265 /* Supergame macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2832796A272878780057C265 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				283279B1272878790057C265 /* GameScene.sks in Resources */,
+				28327975272878780057C265 /* Main.storyboard in Resources */,
+				283279AE272878790057C265 /* Actions.sks in Resources */,
+				28327978272878780057C265 /* LaunchScreen.storyboard in Resources */,
+				283279B9272878790057C265 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28327979272878780057C265 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				283279BA272878790057C265 /* Assets.xcassets in Resources */,
+				28327982272878780057C265 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28327985272878790057C265 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				283279B2272878790057C265 /* GameScene.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28327993272878790057C265 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				283279B3272878790057C265 /* GameScene.sks in Resources */,
+				2832799D272878790057C265 /* Main.storyboard in Resources */,
+				283279AF272878790057C265 /* Actions.sks in Resources */,
+				283279A0272878790057C265 /* LaunchScreen.storyboard in Resources */,
+				283279BB272878790057C265 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		283279A3272878790057C265 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				283279AD272878790057C265 /* Main.storyboard in Resources */,
+				283279B4272878790057C265 /* GameScene.sks in Resources */,
+				283279BC272878790057C265 /* Assets.xcassets in Resources */,
+				283279B0272878790057C265 /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28327968272878780057C265 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				283279B5272878790057C265 /* GameScene.swift in Sources */,
+				28327972272878780057C265 /* GameViewController.swift in Sources */,
+				28327970272878780057C265 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28327983272878790057C265 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				283279B6272878790057C265 /* GameScene.swift in Sources */,
+				2832798F272878790057C265 /* ExtensionDelegate.swift in Sources */,
+				2832798D272878790057C265 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28327991272878790057C265 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				283279B7272878790057C265 /* GameScene.swift in Sources */,
+				2832799A272878790057C265 /* GameViewController.swift in Sources */,
+				28327998272878790057C265 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		283279A1272878790057C265 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				283279B8272878790057C265 /* GameScene.swift in Sources */,
+				283279AA272878790057C265 /* GameViewController.swift in Sources */,
+				283279A8272878790057C265 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2832797E272878780057C265 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2832797A272878780057C265 /* Supergame watchOS App */;
+			targetProxy = 2832797D272878780057C265 /* PBXContainerItemProxy */;
+		};
+		2832798A272878790057C265 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28327986272878790057C265 /* Supergame watchOS App Extension */;
+			targetProxy = 28327989272878790057C265 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		28327973272878780057C265 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28327974272878780057C265 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		28327976272878780057C265 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28327977272878780057C265 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		28327980272878780057C265 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28327981272878780057C265 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		2832799B272878790057C265 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2832799C272878790057C265 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2832799E272878790057C265 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2832799F272878790057C265 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		283279AB272878790057C265 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				283279AC272878790057C265 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		283279BD272878790057C265 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		283279BE272878790057C265 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		283279C0272878790057C265 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CDQY9EMC94;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Supergame watchOS App Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Supergame watchOS App Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amazon.Supergame.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "Supergame Extension";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		283279C1272878790057C265 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CDQY9EMC94;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Supergame watchOS App Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Supergame watchOS App Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amazon.Supergame.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "Supergame Extension";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		283279C4272878790057C265 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CDQY9EMC94;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = Supergame_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = Supergame;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.amazon.Supergame;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amazon.Supergame.watchkitapp;
+				PRODUCT_NAME = Supergame;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		283279C5272878790057C265 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CDQY9EMC94;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = Supergame_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = Supergame;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.amazon.Supergame;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amazon.Supergame.watchkitapp;
+				PRODUCT_NAME = Supergame;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		283279C8272878790057C265 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CDQY9EMC94;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amazon.Supergame;
+				PRODUCT_NAME = Supergame;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		283279C9272878790057C265 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CDQY9EMC94;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amazon.Supergame;
+				PRODUCT_NAME = Supergame;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		283279CB272878790057C265 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "tvOS App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CDQY9EMC94;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amazon.Supergame;
+				PRODUCT_NAME = Supergame;
+				SDKROOT = appletvos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 15.0;
+			};
+			name = Debug;
+		};
+		283279CC272878790057C265 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "tvOS App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CDQY9EMC94;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amazon.Supergame;
+				PRODUCT_NAME = Supergame;
+				SDKROOT = appletvos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 15.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		283279CE272878790057C265 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CDQY9EMC94;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amazon.Supergame;
+				PRODUCT_NAME = Supergame;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		283279CF272878790057C265 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CDQY9EMC94;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amazon.Supergame;
+				PRODUCT_NAME = Supergame;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28327962272878740057C265 /* Build configuration list for PBXProject "Supergame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				283279BD272878790057C265 /* Debug */,
+				283279BE272878790057C265 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		283279BF272878790057C265 /* Build configuration list for PBXNativeTarget "Supergame watchOS App Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				283279C0272878790057C265 /* Debug */,
+				283279C1272878790057C265 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		283279C3272878790057C265 /* Build configuration list for PBXNativeTarget "Supergame watchOS App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				283279C4272878790057C265 /* Debug */,
+				283279C5272878790057C265 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		283279C7272878790057C265 /* Build configuration list for PBXNativeTarget "Supergame iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				283279C8272878790057C265 /* Debug */,
+				283279C9272878790057C265 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		283279CA272878790057C265 /* Build configuration list for PBXNativeTarget "Supergame tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				283279CB272878790057C265 /* Debug */,
+				283279CC272878790057C265 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		283279CD272878790057C265 /* Build configuration list for PBXNativeTarget "Supergame macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				283279CE272878790057C265 /* Debug */,
+				283279CF272878790057C265 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2860D57B2729AEA900EA3BF1 /* XCRemoteSwiftPackageReference "aws-sdk-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/awslabs/aws-sdk-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.14;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2860D57C2729AEAA00EA3BF1 /* AWSDynamoDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2860D57B2729AEA900EA3BF1 /* XCRemoteSwiftPackageReference "aws-sdk-swift" */;
+			productName = AWSDynamoDB;
+		};
+		2860D57E2729AEAA00EA3BF1 /* AWSGameLift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2860D57B2729AEA900EA3BF1 /* XCRemoteSwiftPackageReference "aws-sdk-swift" */;
+			productName = AWSGameLift;
+		};
+		2860D5802729AEAA00EA3BF1 /* AWSS3 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2860D57B2729AEA900EA3BF1 /* XCRemoteSwiftPackageReference "aws-sdk-swift" */;
+			productName = AWSS3;
+		};
+		2860D5832729B30300EA3BF1 /* AWSS3 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2860D57B2729AEA900EA3BF1 /* XCRemoteSwiftPackageReference "aws-sdk-swift" */;
+			productName = AWSS3;
+		};
+		2860D5852729B31E00EA3BF1 /* AWSDynamoDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2860D57B2729AEA900EA3BF1 /* XCRemoteSwiftPackageReference "aws-sdk-swift" */;
+			productName = AWSDynamoDB;
+		};
+		2860D5872729B32600EA3BF1 /* AWSGameLift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2860D57B2729AEA900EA3BF1 /* XCRemoteSwiftPackageReference "aws-sdk-swift" */;
+			productName = AWSGameLift;
+		};
+		2865D2012732FE8B00B2F1FF /* AWSClientRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2860D57B2729AEA900EA3BF1 /* XCRemoteSwiftPackageReference "aws-sdk-swift" */;
+			productName = AWSClientRuntime;
+		};
+		28F7E0EC272C938700676D33 /* AWSClientRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2860D57B2729AEA900EA3BF1 /* XCRemoteSwiftPackageReference "aws-sdk-swift" */;
+			productName = AWSClientRuntime;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 2832795F272878740057C265 /* Project object */;
+}
