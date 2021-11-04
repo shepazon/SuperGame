@@ -115,6 +115,8 @@
 		283279A7272878790057C265 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		283279A9272878790057C265 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		283279AC272878790057C265 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2865D2032734620C00B2F1FF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		2865D2042734623C00B2F1FF /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,8 @@
 		2832795E272878740057C265 = {
 			isa = PBXGroup;
 			children = (
+				2865D2032734620C00B2F1FF /* .gitignore */,
+				2865D2042734623C00B2F1FF /* LICENSE */,
 				28327963272878740057C265 /* Supergame Shared */,
 				2832796E272878780057C265 /* Supergame iOS */,
 				2832797F272878780057C265 /* Supergame watchOS App */,
