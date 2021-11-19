@@ -64,7 +64,6 @@ class GameScene: SKScene {
         }
         
         updateMOTD()
-        //getMOTD2()
     }
 
     #if os(watchOS)
