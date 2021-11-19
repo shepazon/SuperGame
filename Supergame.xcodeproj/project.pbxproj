@@ -11,7 +11,6 @@
 		28327972272878780057C265 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28327971272878780057C265 /* GameViewController.swift */; };
 		28327975272878780057C265 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28327973272878780057C265 /* Main.storyboard */; };
 		28327978272878780057C265 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28327976272878780057C265 /* LaunchScreen.storyboard */; };
-		2832797C272878780057C265 /* Supergame.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2832797B272878780057C265 /* Supergame.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		28327982272878780057C265 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28327980272878780057C265 /* Interface.storyboard */; };
 		28327988272878790057C265 /* Supergame Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 28327987272878790057C265 /* Supergame Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2832798D272878790057C265 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2832798C272878790057C265 /* InterfaceController.swift */; };
@@ -45,17 +44,14 @@
 		2860D5862729B31E00EA3BF1 /* AWSDynamoDB in Frameworks */ = {isa = PBXBuildFile; productRef = 2860D5852729B31E00EA3BF1 /* AWSDynamoDB */; };
 		2860D5882729B32600EA3BF1 /* AWSGameLift in Frameworks */ = {isa = PBXBuildFile; productRef = 2860D5872729B32600EA3BF1 /* AWSGameLift */; };
 		2865D2022732FE8B00B2F1FF /* AWSClientRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 2865D2012732FE8B00B2F1FF /* AWSClientRuntime */; };
+		2865D2062734649A00B2F1FF /* AWSClientRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 2865D2052734649A00B2F1FF /* AWSClientRuntime */; };
+		2865D208273464A000B2F1FF /* AWSS3 in Frameworks */ = {isa = PBXBuildFile; productRef = 2865D207273464A000B2F1FF /* AWSS3 */; };
+		2865D20A273464A800B2F1FF /* AWSDynamoDB in Frameworks */ = {isa = PBXBuildFile; productRef = 2865D209273464A800B2F1FF /* AWSDynamoDB */; };
+		2865D20C273464B000B2F1FF /* AWSGameLift in Frameworks */ = {isa = PBXBuildFile; productRef = 2865D20B273464B000B2F1FF /* AWSGameLift */; };
 		28F7E0ED272C938700676D33 /* AWSClientRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 28F7E0EC272C938700676D33 /* AWSClientRuntime */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2832797D272878780057C265 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2832795F272878740057C265 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2832797A272878780057C265;
-			remoteInfo = "Supergame watchOS App";
-		};
 		28327989272878790057C265 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2832795F272878740057C265 /* Project object */;
@@ -75,17 +71,6 @@
 				28327988272878790057C265 /* Supergame Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		283279C6272878790057C265 /* Embed Watch Content */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
-			dstSubfolderSpec = 16;
-			files = (
-				2832797C272878780057C265 /* Supergame.app in Embed Watch Content */,
-			);
-			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -117,6 +102,8 @@
 		283279AC272878790057C265 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2865D2032734620C00B2F1FF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		2865D2042734623C00B2F1FF /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		287FF68D27397D91000CB265 /* Supergame-macOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Supergame-macOS-Info.plist"; sourceTree = SOURCE_ROOT; };
+		287FF68E27398049000CB265 /* Supergame macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Supergame macOS.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +122,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2865D208273464A000B2F1FF /* AWSS3 in Frameworks */,
+				2865D20A273464A800B2F1FF /* AWSDynamoDB in Frameworks */,
+				2865D2062734649A00B2F1FF /* AWSClientRuntime in Frameworks */,
+				2865D20C273464B000B2F1FF /* AWSGameLift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +232,8 @@
 		283279A6272878790057C265 /* Supergame macOS */ = {
 			isa = PBXGroup;
 			children = (
+				287FF68E27398049000CB265 /* Supergame macOS.entitlements */,
+				287FF68D27397D91000CB265 /* Supergame-macOS-Info.plist */,
 				283279A7272878790057C265 /* AppDelegate.swift */,
 				283279A9272878790057C265 /* GameViewController.swift */,
 				283279AB272878790057C265 /* Main.storyboard */,
@@ -265,12 +258,10 @@
 				28327968272878780057C265 /* Sources */,
 				28327969272878780057C265 /* Frameworks */,
 				2832796A272878780057C265 /* Resources */,
-				283279C6272878790057C265 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2832797E272878780057C265 /* PBXTargetDependency */,
 			);
 			name = "Supergame iOS";
 			packageProductDependencies = (
@@ -313,6 +304,12 @@
 			dependencies = (
 			);
 			name = "Supergame watchOS App Extension";
+			packageProductDependencies = (
+				2865D2052734649A00B2F1FF /* AWSClientRuntime */,
+				2865D207273464A000B2F1FF /* AWSS3 */,
+				2865D209273464A800B2F1FF /* AWSDynamoDB */,
+				2865D20B273464B000B2F1FF /* AWSGameLift */,
+			);
 			productName = "Supergame watchOS App Extension";
 			productReference = 28327987272878790057C265 /* Supergame Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
@@ -508,11 +505,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2832797E272878780057C265 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2832797A272878780057C265 /* Supergame watchOS App */;
-			targetProxy = 2832797D272878780057C265 /* PBXContainerItemProxy */;
-		};
 		2832798A272878790057C265 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 28327986272878790057C265 /* Supergame watchOS App Extension */;
@@ -914,14 +906,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Supergame macOS/Supergame macOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CDQY9EMC94;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
+				ENABLE_USER_SELECTED_FILES = readwrite;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Supergame-macOS-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -944,14 +939,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Supergame macOS/Supergame macOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CDQY9EMC94;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
+				ENABLE_USER_SELECTED_FILES = readwrite;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Supergame-macOS-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -1074,6 +1072,26 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2860D57B2729AEA900EA3BF1 /* XCRemoteSwiftPackageReference "aws-sdk-swift" */;
 			productName = AWSClientRuntime;
+		};
+		2865D2052734649A00B2F1FF /* AWSClientRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2860D57B2729AEA900EA3BF1 /* XCRemoteSwiftPackageReference "aws-sdk-swift" */;
+			productName = AWSClientRuntime;
+		};
+		2865D207273464A000B2F1FF /* AWSS3 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2860D57B2729AEA900EA3BF1 /* XCRemoteSwiftPackageReference "aws-sdk-swift" */;
+			productName = AWSS3;
+		};
+		2865D209273464A800B2F1FF /* AWSDynamoDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2860D57B2729AEA900EA3BF1 /* XCRemoteSwiftPackageReference "aws-sdk-swift" */;
+			productName = AWSDynamoDB;
+		};
+		2865D20B273464B000B2F1FF /* AWSGameLift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2860D57B2729AEA900EA3BF1 /* XCRemoteSwiftPackageReference "aws-sdk-swift" */;
+			productName = AWSGameLift;
 		};
 		28F7E0EC272C938700676D33 /* AWSClientRuntime */ = {
 			isa = XCSwiftPackageProductDependency;

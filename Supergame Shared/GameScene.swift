@@ -13,12 +13,9 @@ import AWSClientRuntime
 import AWSS3
 
 class GameScene: SKScene {
-    
-    
     fileprivate var label : SKLabelNode?
     fileprivate var spinnyNode : SKShapeNode?
 
-    
     class func newGameScene() -> GameScene {
         // Load 'GameScene.sks' as an SKScene.
         guard let scene = SKScene(fileNamed: "GameScene") as? GameScene else {
@@ -66,62 +63,8 @@ class GameScene: SKScene {
             #endif
         }
         
-        /// Set up the message of the day; not saving the `Task` as it
-        /// won't be needed again.
-        
-        Task { () in
-            let motd = await self.readTextFile("motd.txt")
-            if (motd != "") {
-                setMOTD(motd)
-            }
-        }
-    }
-    
-    /// Read the text file from Amazon S3 whose path matches the one given.
-    ///
-    /// - Parameter name: The path of the file to read
-    /// - Returns:              A `String` containing the entire contents of the specified file.
-    ///                         If the MOTD file isn't found or an error occurs, returns an empty
-    ///                         string.
-    ///
-    func readTextFile(_ name: String) async -> String {
-        let s3Config: S3Client.S3ClientConfiguration
-        var text: String = ""
-        
-        /// Set up the configuration to log requests and responses and
-        /// create the new S3 client object, `s3`.
-        
-        do {
-            s3Config = try S3Client.S3ClientConfiguration()
-            s3Config.clientLogMode = ClientLogMode.requestAndResponse
-        } catch {
-            dump(error, name: "Creating configuration object")
-            exit(1)
-        }
-        let s3 = S3Client(config: s3Config)
-
-        // Read the file
-        
-        let motdInput = GetObjectInput(bucket: "supergame-datastore", key: "text/\(name)")
-        do {
-            let output = try await s3.getObject(input: motdInput)
-            
-            if let bytes = output.body?.toBytes() {
-                text = String(decoding: bytes.toData(), as: UTF8.self)
-            }
-        } catch {
-            dump(error, name: "Attempting to read the file \"\(name)\"")
-        }
-
-        return text
-    }
-    
-    /// Set the contents of the Message of the Day text box in the scene to the given string.
-    /// - Parameter motd: The text to show in the MOTD box
-    ///
-    func setMOTD(_ motd: String) {
-        let motdLabel = self.childNode(withName: "//motdLabel") as? SKLabelNode
-        motdLabel?.text = motd
+        updateMOTD()
+        //getMOTD2()
     }
 
     #if os(watchOS)
@@ -144,6 +87,77 @@ class GameScene: SKScene {
     
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
+    }
+
+    /// Load the message of the day from the file on S3 and display it in
+    /// the MOTD label box.
+    ///
+    func updateMOTD() {
+        Task() {
+            var motd: String = ""
+            
+            do {
+                let s3 = try S3Client()
+                
+                let motdInput = GetObjectInput(bucket: "supergame-datastore", key: "text/motd.txt")
+                let output = try await s3.getObject(input: motdInput)
+                
+                if let bytes = output.body?.toBytes() {
+                    motd = String(decoding: bytes.toData(), as: UTF8.self)
+                }
+            } catch {
+                motd = ""
+            }
+            
+            setMOTD(motd)
+        }
+    }
+
+    /// Read the text file from Amazon S3 whose key matches the one given.
+    ///
+    /// - Parameter name: The key of the file to read
+    /// - Returns:              A `String` containing the entire contents of the specified file.
+    ///                         If the text file isn't found or an error occurs, returns an empty
+    ///                         string.
+    ///
+    func readTextFile(_ name: String) async -> String {
+        let s3Config: S3Client.S3ClientConfiguration
+        var text: String = ""
+        
+        /// Set up the configuration to log requests and responses and
+        /// create the new S3 client object, `s3`.
+        
+        do {
+            s3Config = try S3Client.S3ClientConfiguration()
+            s3Config.clientLogMode = ClientLogMode.requestAndResponse
+        } catch {
+            dump(error, name: "Creating configuration object")
+            exit(1)
+        }
+        let s3 = S3Client(config: s3Config)
+
+        // Read the file from S3
+        
+        let motdInput = GetObjectInput(bucket: "supergame-datastore", key: name)
+        do {
+            let output = try await s3.getObject(input: motdInput)
+            
+            if let bytes = output.body?.toBytes() {
+                text = String(decoding: bytes.toData(), as: UTF8.self)
+            }
+        } catch {
+            dump(error, name: "Attempting to read the file \"\(name)\"")
+        }
+
+        return text
+    }
+    
+    /// Set the contents of the Message of the Day text box in the scene to the given string.
+    /// - Parameter motd: The text to show in the MOTD box
+    ///
+    func setMOTD(_ motd: String) {
+        let motdLabel = self.childNode(withName: "//motdLabel") as? SKLabelNode
+        motdLabel?.text = motd
     }
 }
 
